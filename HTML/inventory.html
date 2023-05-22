@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <table>
+    <h1>PROFILE</h1>
+
+    <div>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="index.html">Log Out</a> |
+          </nav>
+    </div>
+    
+    <p>Personal Information</p>
+
+    <table class="input">
         <tr>
             <td>
                 <form autocomplete="off" onsubmit="onFormSubmit()">
@@ -37,26 +50,29 @@
                         <input type="reset" value="Reset">
                     </div>
                 </form>
-
-                <td>
-                    <table class="list" id="storeList">
-                        <thead>
-                            <tr>
-                                <th>ID Number</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Birthdate</th>
-                                <th>Address</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-                </td>
             </td>
         </tr>
     </table>
-    <script type="text/javascript" src="/JAVASCRIPT/script.js"></script>    
+
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+                <th>ID Number</th>
+                <th>| First Name</th>
+                <th>| Last Name</th>
+                <th>| Birthdate</th>
+                <th>| Address</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script type="text/javascript" src="/JAVASCRIPT/script.js"></script>
+
+    <footer>
+        <P>All rights reserved. &copy;</P>
+    </footer>
+
 </body>
 </html>

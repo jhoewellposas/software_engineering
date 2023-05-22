@@ -1,5 +1,14 @@
-#nav_bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+body {
+  background-image: url(/Images/backgroundimage.jpg);
+  background-size: auto;
+}
+
+.input {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+}
