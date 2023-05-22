@@ -12,7 +12,7 @@ function onFormSubmit(e) {
         resetForm();    
 }
 
-//Retrieve the data
+//Retrieve data
 function readFormData() {
     var formData = {};
     formData["idNumber"] = document.getElementById("idNumber").value;
@@ -23,7 +23,7 @@ function readFormData() {
     return formData;
 }
 
-//Insert the data
+//Insert data
 function insertNewRecord(data) {
     var table = document.getElementById("storeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
@@ -41,7 +41,7 @@ function insertNewRecord(data) {
         cell5.innerHTML = `<button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button>`;
 }
 
-//Edit the data
+//Edit data
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("idNumber").value = selectedRow.cells[0].innerHTML;
@@ -58,7 +58,7 @@ function updateRecord(formData) {
     selectedRow.cells[4].innerHTML = formData.address;
 }
 
-//Delete the data
+//Delete data
 function onDelete(td) {
     if (confirm('Do you want to delete this record?')) {
         row = td.parentElement.parentElement;
@@ -67,7 +67,7 @@ function onDelete(td) {
     }
 }
 
-//Reset the data
+//Reset data
 function resetForm() {
     document.getElementById("idNumber").value = '';
     document.getElementById("firstName").value = '';
