@@ -1,6 +1,7 @@
 body {
   background-image: url(/Images/backgroundimage.jpg);
-  background-size: auto;
+  background-position: center; 
+  background-size: cover;
 }
 
 .input {
